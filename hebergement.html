@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dream Village - Hébergement</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <small class="me-3 text-light"
+              ><i class="fa fa-map-marker-alt me-2"></i>Les Cascades Sidi Moussa Al Mejdoub, Mohammedia</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-phone-alt me-2"></i>+212 661-751757</small
+            >
+            <small class="text-light"
+              ><i class="fa fa-envelope-alt me-2"></i>contact@dreamvillage.ma</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-twitter fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href="https://web.facebook.com/dreamvillage.ma" target="_blank" rel="noopener"
+              ><i class="fab fa-facebook-f fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-linkedin-in fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href="https://www.instagram.com/direct/inbox/" target="_blank" rel="noopener"
+              ><i class="fab fa-instagram fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle"
+              href="https://www.youtube.com/@dreamvillage2335" target="_blank" rel="noopener"
+              ><i class="fab fa-youtube fw-normal"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav
+        class="navbar navbar-expand-lg navbar-light p-0 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand p-0">
+          <img class="me-3" src="img/icon/icon-10.png" alt="Icon" style="width: 100px; height: 100px;" />
+          <h1 class="m-0 text-primary" style="font-family: 'Quicksand', cursive;">Dream Village</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Accueil</a>
+            <a href="parc-aquatique.html" class="nav-item nav-link">Parc Aquatique</a>
+            <a href="parc-dattraction.html" class="nav-item nav-link">Parc d'Attraction</a>
+            <a href="hebergement.html" class="nav-item nav-link active">Hébergement</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                <a href="animal.html" class="dropdown-item">Nos animaux</a>
+                <a href="about.html" class="dropdown-item">À propos</a>
+                <a href="service.html" class="dropdown-item">Services</a>
+                <a href="membership.html" class="dropdown-item">Adhésion</a>
+                <a href="contact.html" class="dropdown-item">Contact</a>
+              </div>
+            </div>
+          </div>
+          <a href="" class="btn btn-primary"
+            >Acheter un billet<i class="fa fa-arrow-right ms-3"></i
+          ></a>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <h1 class="display-4 text-white mb-3 animated slideInDown">Hébergement</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Accueil</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Pages</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+              Hébergement
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Availability Search Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <p><span class="text-primary me-2">#</span>Réservez votre séjour</p>
+            <h1 class="display-5 mb-4">
+              Trouvez l'hébergement parfait pour votre visite au zoo
+            </h1>
+          </div>
+          <br>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <form class="bg-light p-4 rounded">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="date"
+                      class="form-control border-0"
+                      id="arrival"
+                      placeholder="Date d'arrivée"
+                    />
+                    <label for="arrival">Date d'arrivée</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="date"
+                      class="form-control border-0"
+                      id="departure"
+                      placeholder="Date de départ"
+                    />
+                    <label for="departure">Date de départ</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <select class="form-select border-0" id="guests">
+                      <option value="1">1 Personne</option>
+                      <option value="2">2 Personnes</option>
+                      <option value="3">3 Personnes</option>
+                      <option value="4">4 Personnes</option>
+                      <option value="5">5+ Personnes</option>
+                    </select>
+                    <label for="guests">Nombre de personnes</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
+                    Vérifier la disponibilité
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Availability Search End -->
+
+    <!-- Accommodation Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h1 class="display-5">Découvrez nos options d'hébergement exclusives</h1>
+        </div>
+        <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <p><span class="text-primary me-2">#</span>Nos hébergements</p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary active" data-filter="all">Tous</button>
+              <button type="button" class="btn btn-outline-primary" data-filter="lodges">Lodges</button>
+              <button type="button" class="btn btn-outline-primary" data-filter="tents">Tentes Safari</button>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4" id="accommodation-grid">
+            <!-- Lodge 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-category="lodges">
+              <div class="membership-item position-relative">
+                <img class="img-fluid" src="img/elephant-walking-road.jpg" alt="Lodge Luxe" />
+                <div class="position-absolute top-0 end-0 m-3">
+                  <span class="badge bg-primary">Populaire</span>
+                </div>
+                <h4 class="text-white mb-2">Lodge Safari Luxe</h4>
+                <div class="mb-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <small class="text-white">(4.9)</small>
+                </div>
+                <p class="text-white mb-3">
+                  Profitez d'une vue imprenable sur la savane depuis votre lodge privé avec piscine.
+                </p>
+                <div class="mb-3">
+                  <small class="text-white me-3"><i class="fa fa-bed me-1"></i>2 Chambres</small>
+                  <small class="text-white me-3"><i class="fa fa-users me-1"></i>Jusqu'à 4 personnes</small>
+                  <small class="text-white"><i class="fa fa-wifi me-1"></i>Wi-Fi gratuit</small>
+                </div>
+                <h3 class="text-primary mb-3">2500 DH / nuit</h3>
+                <a class="btn btn-outline-light px-4" href="">Réserver maintenant</a>
+              </div>
+            </div>
+            <!-- Lodge 2 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="lodges">
+              <div class="membership-item position-relative">
+                <img class="img-fluid" src="img/lion.jpg" alt="Lodge Familial" />
+                <h4 class="text-white mb-2">Lodge Familial</h4>
+                <div class="mb-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-alt text-warning"></i>
+                  <small class="text-white">(4.7)</small>
+                </div>
+                <p class="text-white mb-3">
+                  Idéal pour les familles, avec espace de jeu pour enfants et cuisine équipée.
+                </p>
+                <div class="mb-3">
+                  <small class="text-white me-3"><i class="fa fa-bed me-1"></i>3 Chambres</small>
+                  <small class="text-white me-3"><i class="fa fa-users me-1"></i>Jusqu'à 6 personnes</small>
+                  <small class="text-white"><i class="fa fa-utensils me-1"></i>Cuisine</small>
+                </div>
+                <h3 class="text-primary mb-3">3200 DH / nuit</h3>
+                <a class="btn btn-outline-light px-4" href="">Réserver maintenant</a>
+              </div>
+            </div>
+            <!-- Tent 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" data-category="tents">
+              <div class="membership-item position-relative">
+                <img class="img-fluid" src="img/flamingo.jpg" alt="Tente Standard" />
+                <h4 class="text-white mb-2">Tente Safari Deluxe</h4>
+                <div class="mb-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <small class="text-white">(4.8)</small>
+                </div>
+                <p class="text-white mb-3">
+                  Vivez l'aventure africaine dans une tente de luxe avec salle de bain privative.
+                </p>
+                <div class="mb-3">
+                  <small class="text-white me-3"><i class="fa fa-bed me-1"></i>1 Chambre</small>
+                  <small class="text-white me-3"><i class="fa fa-users me-1"></i>Jusqu'à 2 personnes</small>
+                  <small class="text-white"><i class="fa fa-shower me-1"></i>Salle de bain</small>
+                </div>
+                <h3 class="text-primary mb-3">1800 DH / nuit</h3>
+                <a class="btn btn-outline-light px-4" href="">Réserver maintenant</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accommodation End -->
+
+    <!-- Galerie des Hébergements Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title text-center text-primary text-uppercase">Galerie</h6>
+          <h1 class="mb-5">Photos des <span class="text-primary text-uppercase">Hébergements</span></h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/b1.png" data-lightbox="galerie-gallery" data-title="Hébergement 1">
+                <img class="img-fluid" src="img/b1.png" alt="Hébergement 1" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/b2.png" data-lightbox="galerie-gallery" data-title="Hébergement 3">
+                <img class="img-fluid" src="img/b2.png" alt="Hébergement 3" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/b3.png" data-lightbox="galerie-gallery" data-title="Hébergement 2">
+                <img class="img-fluid" src="img/b3.png" alt="Hébergement 2" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/b4.jpg" data-lightbox="galerie-gallery" data-title="Hébergement 2">
+                <img class="img-fluid" src="img/b4.jpg" alt="Hébergement 2" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/b5.jpg" data-lightbox="galerie-gallery" data-title="Hébergement 2">
+                <img class="img-fluid" src="img/b5.jpg" alt="Hébergement 2" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/b6.jpg" data-lightbox="galerie-gallery" data-title="Hébergement 2">
+                <img class="img-fluid" src="img/b6.jpg" alt="Hébergement 2" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/m1.png" data-lightbox="galerie-gallery" data-title="Hébergement 4">
+                <img class="img-fluid" src="img/m1.png" alt="Hébergement 4" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/m2.png" data-lightbox="galerie-gallery" data-title="Hébergement 5">
+                <img class="img-fluid" src="img/m2.png" alt="Hébergement 5" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="membership-item position-relative" style="background: transparent; height: 300px;">
+              <a href="img/m3.png" data-lightbox="galerie-gallery" data-title="Hébergement 6">
+                <img class="img-fluid" src="img/m3.png" alt="Hébergement 6" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Galerie des Hébergements End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Les Cascades Sidi Moussa Al Mejdoub, Mohammedia
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+212 661-751757
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>contact@dreamvillage.ma
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/dreamvillage.ma" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/direct/inbox/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@dreamvillage2335" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://ma.linkedin.com/company/dream-village?trk=ppro_cprof" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Liens utiles</h5>
+            <a class="btn btn-link" href="index.html">Accueil</a>
+            <a class="btn btn-link" href="about.html">À propos de nous</a>
+            <a class="btn btn-link" href="contact.html">Nous contacter</a>
+            <a class="btn btn-link" href="">Blogs</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Liens populaires</h5>
+            <a class="btn btn-link" href="about.html">À propos de nous</a>
+            <a class="btn btn-link" href="contact.html">Nous contacter</a>
+            <a class="btn btn-link" href="service.html">Nos services</a>
+            <a class="btn btn-link" href="">Termes et conditions</a>
+            <a class="btn btn-link" href="contact.html">Support</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Bulletin d'information</h5>
+            <p>Abonnez-vous à notre newsletter pour les dernières mises à jour.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Votre email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                S'inscrire
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Dream Village</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Conçu par
+              <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+              <br />Distribué par :
+              <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Custom JavaScript for Accommodation Filtering -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        const accommodationItems = document.querySelectorAll('[data-category]');
+
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            filterButtons.forEach(btn => btn.classList.remove('btn-primary'));
+            filterButtons.forEach(btn => btn.classList.add('btn-outline-primary'));
+            this.classList.add('active');
+            this.classList.remove('btn-outline-primary');
+            this.classList.add('btn-primary');
+
+            // Filter items
+            accommodationItems.forEach(item => {
+              if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

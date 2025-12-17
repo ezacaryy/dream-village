@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dream Village - Parc d'Attraction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-18px); }
+      }
+
+      .poster-float { animation: float 4s ease-in-out infinite; }
+      .ride-badge { font-size: 0.85rem; padding: 0.25rem 0.5rem; }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Chargement...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+            <small>Les Cascades Sidi Moussa Al Mejdoub, Mohammedia</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center py-3">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Lun - Ven : 09.00 - 21.00</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+212 661-751757</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <a class="btn btn-sm-square bg-white text-primary me-1" href="https://web.facebook.com/dreamvillage.ma" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href="https://ma.linkedin.com/company/dream-village?trk=ppro_cprof"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/direct/inbox/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-light p-0 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <img class="me-3" src="img/icon/icon-10.png" alt="Icon" style="width: 100px; height: 100px;" />
+          <h1 class="m-0 text-primary" style="font-family: 'Quicksand', cursive;">Dream Village</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Accueil</a>
+            <a href="parc-aquatique.html" class="nav-item nav-link">Parc Aquatique</a>
+            <a href="parc-dattraction.html" class="nav-item nav-link active">Parc d'Attraction</a>
+            <a href="hebergement.html" class="nav-item nav-link">Hébergement</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+              <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                <a href="animal.html" class="dropdown-item">Nos animaux</a>
+                <a href="about.html" class="dropdown-item">À propos</a>
+                <a href="service.html" class="dropdown-item">Services</a>
+                <a href="membership.html" class="dropdown-item">Adhésion</a>
+                <a href="contact.html" class="dropdown-item">Contact</a>
+              </div>
+            </div>
+          </div>
+          <a href="" class="btn btn-primary">Acheter un billet<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <h1 class="display-4 text-white mb-3 animated slideInDown">Parc d'Attraction</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a class="text-white" href="index.html">Accueil</a></li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">Parc d'Attraction</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Attractions Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5 mb-5 align-items-center">
+          <div class="col-12 text-center">
+            <p><i class="fa fa-star text-secondary me-2"></i>Nos Attractions</p>
+            <h1 class="display-5 mb-4">Frissons, Rires et Aventures</h1>
+            <p class="mb-0">Explorez notre Parc d'Attraction rempli de manèges, spectacles et activités pour tous les âges. Du grand huit familial aux aires de jeux thématiques, chaque coin propose une nouvelle aventure.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="attraction-item">
+              <div class="attraction-img" style="margin-bottom: 20px;">
+                <img class="img-fluid w-100 rounded shadow-lg" src="img/r1.png" alt="Grand Huit" />
+              </div>
+              
+              <div class="bg-light p-4">
+                <h5>Grand Huit 🎢 <span class="badge bg-primary ride-badge">Haute Intensité</span></h5>
+                <p>Vivez des sensations fortes sur notre montagne russe emblématique, adaptée aux aventuriers en quête d'adrénaline.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="attraction-item">
+              <div class="attraction-img" style="margin-bottom: 20px;">
+                <img class="img-fluid w-100 rounded shadow-lg" src="img/r2.png" alt="Grande Roue" />
+              </div>
+              <div class="bg-light p-4">
+                <h5>Grande Roue 🎡 <span class="badge bg-success ride-badge">Familial</span></h5>
+                <p>Admirez la vue panoramique sur Dream Village depuis notre grande roue confortable.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="attraction-item">
+              <div class="attraction-img" style="margin-bottom: 20px;">
+                <img class="img-fluid w-100 rounded shadow-lg" src="img/r3.png" alt="Splash" />
+              </div>
+              <div class="bg-light p-4">
+                <h5>Splash 🌊 <span class="badge bg-info ride-badge">Humide & Amusant</span></h5>
+                <p>Rafraîchissez-vous avec nos descentes aquatiques spécialement conçues pour s'amuser et éclabousser.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="attraction-item">
+              <div class="attraction-img" style="margin-bottom: 20px;">
+                <img class="img-fluid w-100 rounded shadow-lg" src="img/r4.png" alt="House of Mirrors" />
+              </div>
+              <div class="bg-light p-4">
+                <h5>Maison des Miroirs 🪞 <span class="badge bg-warning ride-badge">Familial</span></h5>
+                <p>Perdez-vous (en sécurité) et riez dans notre labyrinthe de miroirs enchantés.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="attraction-item">
+              <div class="attraction-img" style="margin-bottom: 20px;">
+                <img class="img-fluid w-100 rounded shadow-lg" src="img/r5.png" alt="Spectacle de Cascades" />
+              </div>
+              <div class="bg-light p-4">
+                <h5>Spectacle de Cascades 🎭 <span class="badge bg-danger ride-badge">Programme</span></h5>
+                <p>Assistez à des performances et cascades réalisées par nos artistes professionnels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="attraction-item">
+              <div class="attraction-img" style="margin-bottom: 20px;">
+                <img class="img-fluid w-100 rounded shadow-lg" src="img/r6.png" alt="Parcours Aventure" />
+              </div>
+              <div class="bg-light p-4">
+                <h5>Parcours Aventure 🧗 <span class="badge bg-secondary ride-badge">Aventure</span></h5>
+                <p>Testez votre agilité sur notre parcours d'obstacles en hauteur, sécurisé pour tous.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Attractions End -->
+
+    <!-- Poster Display Start -->
+    <div class="container-xxl py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 text-center">
+            <img id="posterImage" src="img/w menu.png" alt="Affiche Parc d'Attraction" class="img-fluid rounded shadow-lg poster-float" style="max-width:100%;" onerror="posterFallback()" />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-6 mb-3">Affiche Officielle</h2>
+            <p class="mb-4">Téléchargez ou visualisez notre affiche officielle du Parc d'Attraction. Cette affiche capture l'essence de l'aventure, du rire et de la magie que vous vivrez dans notre parc. Partagez-la avec vos amis et rejoignez-nous pour des moments inoubliables !</p>
+            <ul class="list-unstyled mb-4">
+              <li><i class="fa fa-check text-primary me-2"></i>Design captivant et coloré</li>
+              <li><i class="fa fa-check text-primary me-2"></i>Parfait pour le partage sur les réseaux sociaux</li>
+              <li><i class="fa fa-check text-primary me-2"></i>Téléchargeable en haute résolution</li>
+              <li><i class="fa fa-check text-primary me-2"></i>Idéal pour promouvoir vos visites</li>
+            </ul>
+            <div>
+              <a id="posterDownload" href="img/w menu.png" class="btn btn-primary me-2" download>Télécharger le Poster</a>
+              <a id="posterOpen" href="img/w menu.png" class="btn btn-outline-primary" target="_blank">Ouvrir en grand</a>
+            </div>
+          </div>
+        </div>
+            <script>
+              function posterFallback(){
+                var img = document.getElementById('posterImage');
+                if(!img) return;
+                img.onerror = null;
+                img.src = 'img/w menu.png';
+                var dl = document.getElementById('posterDownload');
+                var open = document.getElementById('posterOpen');
+                if(dl) dl.href = img.src;
+                if(open) open.href = img.src;
+              }
+              document.addEventListener('DOMContentLoaded', function(){
+                var img = document.getElementById('posterImage');
+                if(img && (img.naturalWidth === 0 || img.complete && img.naturalWidth === 0)){
+                  posterFallback();
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Poster Display End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Les Cascades Sidi Moussa Al Mejdoub, Mohammedia</p>
+            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212 661-751757</p>
+            <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@dreamvillage.ma</p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/dreamvillage.ma" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/direct/inbox/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@dreamvillage2335" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social" href="https://ma.linkedin.com/company/dream-village?trk=ppro_cprof" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Liens utiles</h5>
+            <a class="btn btn-link" href="index.html">Accueil</a>
+            <a class="btn btn-link" href="about.html">À propos de nous</a>
+            <a class="btn btn-link" href="contact.html">Nous contacter</a>
+            <a class="btn btn-link" href="">Blogs</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Liens populaires</h5>
+            <a class="btn btn-link" href="about.html">À propos de nous</a>
+            <a class="btn btn-link" href="contact.html">Nous contacter</a>
+            <a class="btn btn-link" href="service.html">Nos services</a>
+            <a class="btn btn-link" href="">Termes et conditions</a>
+            <a class="btn btn-link" href="contact.html">Support</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Bulletin d'information</h5>
+            <p>Abonnez-vous à notre newsletter pour les dernières mises à jour.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre email" />
+              <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a class="border-bottom" href="#">Dream Village</a>, All Right Reserved.</div>
+            <div class="col-md-6 text-center text-md-end">Conçu par <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> <br />Distribué par : <a href="https://themewagon.com" target="_blank">ThemeWagon</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
