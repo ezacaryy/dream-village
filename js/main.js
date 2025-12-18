@@ -56,8 +56,8 @@
         loop: true,
         nav : true,
         navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
+            '<i class="fas fa-angle-left"></i>',
+            '<i class="fas fa-angle-right"></i>'
         ]
     });
 

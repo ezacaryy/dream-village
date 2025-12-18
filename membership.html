@@ -308,20 +308,35 @@
               &copy; <a class="border-bottom" href="#">DREAM VILLAGE</a>, All
               Right Reserved.
             </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Conçu par
-              <a class="border-bottom" href="https://htmlcodex.com"
-                >HTML Codex</a
-              >
-              <br />Distribué par :
-              <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Footer End -->
+
+    <!-- Chat Modal -->
+    <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chatModalLabel">ZooBot Chat</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="chat-container" style="border: 1px solid #ccc; height: 300px; overflow-y: auto; padding: 10px; background-color: white;"></div>
+            <div id="input-container" style="display: flex; margin-top: 10px;">
+              <input type="text" id="message-input" placeholder="Type your message..." style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 5px 0 0 5px;">
+              <button id="send-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 0 5px 5px 0; cursor: pointer;">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Toggle -->
+    <a href="#" class="chat-toggle" data-bs-toggle="modal" data-bs-target="#chatModal">
+      <i class="fas fa-comments"></i>
+    </a>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
@@ -340,5 +355,71 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Chat Script -->
+    <script>
+        const conversation = [];
+        const chatContainer = document.getElementById('chat-container');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+
+        function addMessage(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.textContent = message;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const userMessage = messageInput.value.trim();
+            if (!userMessage) return;
+
+            addMessage(userMessage, 'user');
+            messageInput.value = '';
+
+            conversation.push({ role: "user", content: userMessage });
+
+            try {
+                const response = await fetch("http://localhost:11434/api/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        model: "llama3",
+                        messages: conversation,
+                        stream: false
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error("Ollama not running");
+                }
+
+                const data = await response.json();
+                const botMessage = data.message.content;
+
+                addMessage(botMessage, 'bot');
+                conversation.push({ role: "assistant", content: botMessage });
+
+            } catch (error) {
+                addMessage(
+                    "ZooBot is offline. Please make sure Ollama is running on this computer.",
+                    "bot"
+                );
+                console.error(error);
+            }
+        }
+
+        sendButton.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        // Initialize with greeting
+        addMessage(
+            "Hello! I'm ZooBot 🦁 Ask me anything about Dream Village Zoo.",
+            "bot"
+        );
+    </script>
   </body>
 </html>
