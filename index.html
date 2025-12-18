@@ -628,7 +628,7 @@
               <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
               <h1 class="display-1">01</h1>
               <h4 class="text-white mb-3">Populaire</h4>
-              <h3 class="text-primary mb-4">800  DH</h3>
+              <h3 class="text-primary mb-4">499  DH</h3>
               <p><i class="fa fa-check text-primary me-3"></i>10% de réduction</p>
               <p>
                 <i class="fa fa-check text-primary me-3"></i>2 adultes et 2 enfants
@@ -644,7 +644,7 @@
               <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
               <h1 class="display-1">02</h1>
               <h4 class="text-white mb-3">Standard</h4>
-              <h3 class="text-primary mb-4">1000 DH</h3>
+              <h3 class="text-primary mb-4">799 DH</h3>
               <p><i class="fa fa-check text-primary me-3"></i>15% de réduction</p>
               <p>
                 <i class="fa fa-check text-primary me-3"></i>4 adultes et 4 enfants
@@ -660,7 +660,7 @@
               <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
               <h1 class="display-1">03</h1>
               <h4 class="text-white mb-3">Premium</h4>
-              <h3 class="text-primary mb-4">1499 DH</h3>
+              <h3 class="text-primary mb-4">799 DH</h3>
               <p><i class="fa fa-check text-primary me-3"></i>20% de réduction</p>
               <p>
                 <i class="fa fa-check text-primary me-3"></i>4 adultes et 4 enfants
@@ -699,7 +699,7 @@
               <p>
                 Visiter Dream Village a été une expérience incroyable pour ma famille. Les animaux étaient si bien soignés, et les expositions étaient éducatives et amusantes. Nous avons appris beaucoup sur la conservation de la faune. Hautement recommandé !
               </p>
-              <h5 class="mb-1">John Doe</h5>
+              <h5 class="mb-1">Jasmin Dor</h5>
               <span class="fst-italic">Enseignant</span>
             </div>
           </div>
@@ -725,9 +725,9 @@
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                Le parc Dream Village a dépassé nos attentes. Les installations sont propres, la nourriture est excellente, et les animaux sont les stars. Nous avons hâte de revenir pour une autre visite !
+                حديقة دريم فيليدج فاقت توقعاتنا. المرافق نظيفة،some  الطعام ممتاز، والحيوانات هي النجوم. نتطلع للعودة لزيارة أخرى!
               </p>
-              <h5 class="mb-1">Mike Johnson</h5>
+              <h5 class="mb-1">Ali Chihab</h5>
               <span class="fst-italic">Photographe</span>
             </div>
           </div>
@@ -880,9 +880,10 @@
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        model: "llama3",
+                        model: "llama2",
                         messages: conversation,
-                        stream: false
+                        stream: false,
+                        options: { num_predict: 50 }
                     })
                 });
 

@@ -157,9 +157,10 @@ If a question is not zoo-related, politely refuse and redirect to zoo topics.
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        model: "llama3",
+                        model: "llama2",
                         messages: conversation,
-                        stream: false
+                        stream: false,
+                        options: { num_predict: 50 }
                     })
                 });
 
